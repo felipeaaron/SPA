@@ -1,4 +1,13 @@
-<p>heroes works!</p>
+<p>Buscando : {{termino}}
+</p>
+<div class="row" *ngIf="heroes.length== 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            no existen resultados
+        </div>
+    </div>
+</div>
+
 <hr>
 <div class="card-columns">
     <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">

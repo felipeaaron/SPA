@@ -15,7 +15,7 @@ termino:string;
 
   ngOnInit(): void {
     this.activateRoute.params.subscribe(params => {
-      console.log(params['termino']);
+      this.termino=(params['termino']);
       this.heroes=this._heroesService.buscarHeroes(params['termino']);
       console.log(this.heroes)
     })
